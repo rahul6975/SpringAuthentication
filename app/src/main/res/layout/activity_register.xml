@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imgRegisterLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:fontFamily="@font/roboto"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRegisterLogo" />
+
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/enter_your_valid_email"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintTop_toBottomOf="@id/tvUserRegister" />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/enter_a_strong_password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterUsername" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/roboto"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
