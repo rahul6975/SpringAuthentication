@@ -41,6 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
                 if (validateUserName() && validatePassword()) {
                     ResponseRegisterClass responseRegisterClass = new ResponseRegisterClass(etRegisterUsername.getText().toString(), etRegisterPassword.getText().toString());
 
+
+
                     ApiService apiService = Network.getInstance().create(ApiService.class);
                     apiService.addUser(responseRegisterClass).enqueue(new Callback<ResponseClass>() {
                         @Override
@@ -78,6 +80,8 @@ public class RegisterActivity extends AppCompatActivity {
         }
         return true;
     }
+
+
 
     private boolean validateUserName() {
         if (TextUtils.isEmpty(etRegisterUsername.getText().toString())) {
