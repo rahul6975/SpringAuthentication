@@ -32,7 +32,6 @@ public class RegisterActivity extends AppCompatActivity {
         initializeListeners();
         onClickListeners();
 
-
     }
 
     private void onClickListeners() {
@@ -90,6 +89,7 @@ public class RegisterActivity extends AppCompatActivity {
             etRegisterUsername.requestFocus();
             return false;
         }
+
         return true;
     }
 

@@ -7,6 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Network {
 
+
     private static HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY);
 
     public static Retrofit getInstance() {
@@ -16,4 +17,5 @@ public class Network {
         return builder.build();
 
     }
+
 }
