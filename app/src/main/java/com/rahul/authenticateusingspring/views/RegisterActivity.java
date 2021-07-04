@@ -32,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         initializeListeners();
         onClickListeners();
 
+
     }
 
     private void onClickListeners() {
