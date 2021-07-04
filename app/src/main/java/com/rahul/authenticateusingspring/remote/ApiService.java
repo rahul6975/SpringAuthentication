@@ -15,6 +15,7 @@ public interface ApiService {
     @PUT("/addUser")
     Call<ResponseClass> addUser(@Body ResponseRegisterClass responseRegisterClass);
 
+
     @POST("/getUser")
     Call<ResponseClass> getUser(@Body ResponseRegisterClass responseRegisterClass);
 }
